@@ -1,12 +1,21 @@
-﻿using System;
+﻿using MediatR;
+using Ordering.Domain.AggregatesModel.OrderAggregate;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Ordering.Domain.Event
+namespace Ordering.Domain.Events
 {
-    internal class OrderCancelledDomainEvent
+    public class OrderStatusChangedToAwaitingValidationDomainEvent
+       : INotification
     {
+        public int OrderId { get; }
+        public IEnumerable<OrderItem> OrderItems { get; }
+
+        public OrderStatusChangedToAwaitingValidationDomainEvent(int orderId,
+            IEnumerable<OrderItem> orderItems)
+        {
+            OrderId = orderId;
+            OrderItems = orderItems;
+        }
     }
+
 }

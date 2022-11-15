@@ -1,4 +1,6 @@
-﻿using Ordering.Domain.SeedWork;
+﻿using Ordering.Domain.Event;
+using Ordering.Domain.Events;
+using Ordering.Domain.SeedWork;
 
 namespace Ordering.Domain.AggregatesModel.OrderAggregate
 {

@@ -1,12 +1,21 @@
-﻿using System;
+﻿using MediatR;
+using Ordering.Domain.AggregatesModel.OrderAggregate;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ordering.Domain.Event
 {
-    internal class OrderCancelledDomainEvent
+    public class OrderStatusChangedToPaidDomainEvent
+     : INotification
     {
+        public int OrderId { get; }
+        public IEnumerable<OrderItem> OrderItems { get; }
+
+        public OrderStatusChangedToPaidDomainEvent(int orderId,
+            IEnumerable<OrderItem> orderItems)
+        {
+            OrderId = orderId;
+            OrderItems = orderItems;
+        }
     }
+
 }
