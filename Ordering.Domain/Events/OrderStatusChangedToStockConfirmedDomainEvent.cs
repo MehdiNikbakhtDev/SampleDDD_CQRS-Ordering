@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ordering.Domain.Event
+namespace Ordering.Domain.Events
 {
     public class OrderStatusChangedToStockConfirmedDomainEvent
   : INotification

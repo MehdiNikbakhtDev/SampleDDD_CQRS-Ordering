@@ -5,6 +5,10 @@ using Ordering.Domain.AggregatesModel.BuyerAggregate;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 using Ordering.Domain.SeedWork;
 using System.Data;
+using Ordering.Infrastructure.EntityConfigurations;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 namespace Ordering.Infrastructure
 {
     public class OrderingContext : DbContext, IUnitOfWork

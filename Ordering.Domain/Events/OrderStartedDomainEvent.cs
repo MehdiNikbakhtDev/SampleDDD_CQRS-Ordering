@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
-namespace Ordering.Domain.Event
+namespace Ordering.Domain.Events
 {
     public class OrderStartedDomainEvent : INotification
     {

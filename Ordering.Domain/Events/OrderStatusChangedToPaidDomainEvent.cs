@@ -2,7 +2,7 @@
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 using System.Collections.Generic;
 
-namespace Ordering.Domain.Event
+namespace Ordering.Domain.Events
 {
     public class OrderStatusChangedToPaidDomainEvent
      : INotification
