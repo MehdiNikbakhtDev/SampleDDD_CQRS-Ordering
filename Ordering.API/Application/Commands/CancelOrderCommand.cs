@@ -2,7 +2,7 @@
 using MediatR;
 
 
-namespace Ordering.Application.Commands
+namespace Ordering.API.Application.Commands
 {
     public class CancelOrderCommand : IRequest<Result>
     {

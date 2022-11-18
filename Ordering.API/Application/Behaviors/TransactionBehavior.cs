@@ -7,7 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 
 
-namespace Ordering.Application.Behaviors
+namespace Ordering.API.Application.Behaviors
 {
     public class TransactionBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest,TResponse> where TRequest : IRequest<TResponse>
     {

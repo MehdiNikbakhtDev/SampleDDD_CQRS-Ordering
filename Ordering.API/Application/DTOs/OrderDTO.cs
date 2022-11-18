@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ordering.Application.DTOs
+namespace Ordering.API.Application.DTOs
 {
     public class CancelOrderDTO
     {

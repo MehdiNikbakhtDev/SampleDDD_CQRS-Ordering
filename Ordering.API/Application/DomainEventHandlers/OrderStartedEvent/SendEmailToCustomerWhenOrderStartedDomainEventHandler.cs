@@ -1,4 +1,4 @@
-﻿namespace Ordering.Application.DomainEventHandlers.OrderStartedEvent
+﻿namespace Ordering.API.Application.DomainEventHandlers.OrderStartedEvent
 {
     public class SendEmailToCustomerWhenOrderStartedDomainEventHandler
     //: IAsyncNotificationHandler<OrderStartedDomainEvent>

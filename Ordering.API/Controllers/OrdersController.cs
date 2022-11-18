@@ -1,9 +1,9 @@
 ﻿using CSharpFunctionalExtensions;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Ordering.Application.Commands;
-using Ordering.Application.DTOs;
-using Ordering.Application.Queries;
+using Ordering.API.Application.Commands;
+using Ordering.API.Application.DTOs;
+using Ordering.API.Application.Queries;
 using System.Net;
 
 namespace Ordering.API.Controllers

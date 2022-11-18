@@ -4,7 +4,7 @@ using Ordering.Domain.AggregatesModel.OrderAggregate;
 using Ordering.Domain.Events;
 
 
-namespace Ordering.Application.DomainEventHandlers.OrderCancelled
+namespace Ordering.API.Application.DomainEventHandlers.OrderCancelled
 {
     public class OrderStatusChangedToAwaitingValidationDomainEventHandler
                  : INotificationHandler<OrderCancelledDomainEvent>

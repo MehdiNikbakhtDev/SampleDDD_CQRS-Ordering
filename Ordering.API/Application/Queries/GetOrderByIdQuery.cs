@@ -1,9 +1,9 @@
 ﻿using CSharpFunctionalExtensions;
 using MediatR;
-using Ordering.Application.DTOs;
+using Ordering.API.Application.DTOs;
 
 
-namespace Ordering.Application.Queries
+namespace Ordering.API.Application.Queries
 {
     public class GetOrderByIdQuery : IRequest<Result<OrderQuery>>
     {

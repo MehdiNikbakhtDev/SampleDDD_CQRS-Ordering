@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 using Ordering.Domain.Events;
 
-namespace Ordering.Application.DomainEventHandlers.OrderGracePeriodConfirmed
+namespace Ordering.API.Application.DomainEventHandlers.OrderGracePeriodConfirmed
 {
     public class OrderStatusChangedToPaidDomainEventHandler
                  : INotificationHandler<OrderStatusChangedToAwaitingValidationDomainEvent>

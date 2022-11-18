@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 using Ordering.Domain.Events;
 
-namespace Ordering.Application.DomainEventHandlers.OrderPaid
+namespace Ordering.API.Application.DomainEventHandlers.OrderPaid
 {
     public class OrderStatusChangedToPaidDomainEventHandler
                  : INotificationHandler<OrderStatusChangedToPaidDomainEvent>

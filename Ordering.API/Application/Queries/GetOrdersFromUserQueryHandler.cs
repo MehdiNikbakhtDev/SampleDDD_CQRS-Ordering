@@ -2,12 +2,12 @@
 using Dapper;
 using MediatR;
 using Microsoft.Data.SqlClient;
-using Ordering.Application.DTOs;
-using Ordering.Application.Models;
+using Ordering.API.Application.DTOs;
+using Ordering.API.Application.Models;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-namespace Ordering.Application.Queries
+namespace Ordering.API.Application.Queries
 {
     public class GetOrdersFromUserQueryHandler : IRequestHandler<GetOrdersFromUserQuery, Result<IEnumerable<OrderSummary>>>
     {

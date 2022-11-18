@@ -1,10 +1,9 @@
 ﻿using MediatR;
-using Microsoft.Extensions.Logging;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 using Ordering.Domain.Events;
 
 
-namespace Ordering.Application.DomainEventHandlers.OrderStockConfirmed
+namespace Ordering.API.Application.DomainEventHandlers.OrderStockConfirmed
 {
     public class OrderStatusChangedToStockConfirmedDomainEventHandler
                  : INotificationHandler<OrderStatusChangedToStockConfirmedDomainEvent>

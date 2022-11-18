@@ -1,14 +1,14 @@
 ﻿using CSharpFunctionalExtensions;
 using MediatR;
-using Ordering.Application.DTOs;
-using Ordering.Application.Models;
+using Ordering.API.Application.DTOs;
+using Ordering.API.Application.Models;
 using System.Collections.Generic;
 using System.Linq;
 
 
 
 
-namespace Ordering.Application.Commands
+namespace Ordering.API.Application.Commands
 {
     public sealed partial class CreateOrderCommand : IRequest<Result>
     {

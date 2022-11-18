@@ -2,9 +2,9 @@
 using Dapper;
 using MediatR;
 using Microsoft.Data.SqlClient;
-using Ordering.Application.DTOs;
-using Ordering.Application.Models;
-namespace Ordering.Application.Queries
+using Ordering.API.Application.DTOs;
+using Ordering.API.Application.Models;
+namespace Ordering.API.Application.Queries
 {
     public class GetOrderByIdQueryHandler : IRequestHandler<GetOrderByIdQuery, Result<OrderQuery>>
     {

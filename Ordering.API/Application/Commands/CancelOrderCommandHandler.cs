@@ -5,7 +5,7 @@ using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 
 
-namespace Ordering.Application.Commands
+namespace Ordering.API.Application.Commands
 {
     public class CancelOrderCommandHandler : IRequestHandler<CancelOrderCommand, Result>
     {

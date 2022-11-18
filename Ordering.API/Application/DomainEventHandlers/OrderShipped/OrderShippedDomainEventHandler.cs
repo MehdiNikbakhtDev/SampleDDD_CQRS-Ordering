@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 using Ordering.Domain.Events;
 
-namespace Ordering.Application.DomainEventHandlers.OrderShipped
+namespace Ordering.API.Application.DomainEventHandlers.OrderShipped
 {
     public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler
                  : INotificationHandler<OrderShippedDomainEvent>

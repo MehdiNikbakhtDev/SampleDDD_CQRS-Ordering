@@ -1,9 +1,9 @@
-﻿using Ordering.Application.Models;
+﻿using Ordering.API.Application.Models;
 using System;
 using System.Collections.Generic;
 
 
-namespace Ordering.Application.DTOs
+namespace Ordering.API.Application.DTOs
 {
     public class OrderDTO
     {

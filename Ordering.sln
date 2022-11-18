@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Domain", "Ordering
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Infrastructure", "Ordering.Infrastructure\Ordering.Infrastructure.csproj", "{DDA04996-111E-44C1-8E42-BCFDC0FBC6A1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Application", "Ordering.Application\Ordering.Application.csproj", "{69DA1489-B49F-43E0-8C01-339203F915AD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.API", "Ordering.API\Ordering.API.csproj", "{16D5523D-FAAB-450F-8570-7EC831320EF6}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{DDA04996-111E-44C1-8E42-BCFDC0FBC6A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDA04996-111E-44C1-8E42-BCFDC0FBC6A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDA04996-111E-44C1-8E42-BCFDC0FBC6A1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{69DA1489-B49F-43E0-8C01-339203F915AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69DA1489-B49F-43E0-8C01-339203F915AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{69DA1489-B49F-43E0-8C01-339203F915AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{69DA1489-B49F-43E0-8C01-339203F915AD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{16D5523D-FAAB-450F-8570-7EC831320EF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{16D5523D-FAAB-450F-8570-7EC831320EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16D5523D-FAAB-450F-8570-7EC831320EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU

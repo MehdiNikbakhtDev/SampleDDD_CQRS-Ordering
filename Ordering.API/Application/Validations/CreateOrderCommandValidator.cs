@@ -1,10 +1,10 @@
 ﻿using FluentValidation;
-using Ordering.Application.DTOs;
-using Ordering.Application.Models;
+using Ordering.API.Application.DTOs;
+using Ordering.API.Application.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Ordering.Application.Validations
+namespace Ordering.API.Application.Validations
 {
     public class CreateOrderCommandValidator : AbstractValidator<OrderDTO>
     {

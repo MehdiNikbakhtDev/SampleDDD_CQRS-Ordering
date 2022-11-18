@@ -1,6 +1,6 @@
 ﻿
 
-namespace Ordering.Application.Models
+namespace Ordering.API.Application.Models
 {
     public sealed class ConnectionString
     {

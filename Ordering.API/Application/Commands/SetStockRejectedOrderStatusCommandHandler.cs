@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 
 
-namespace Ordering.Application.Commands
+namespace Ordering.API.Application.Commands
 {
     public class ShipOrderCommand : IRequest<Result>
     {

@@ -5,7 +5,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Ordering.Application.DomainEventHandlers.OrderStartedEvent
+namespace Ordering.API.Application.DomainEventHandlers.OrderStartedEvent
 {
     public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler
                           : INotificationHandler<OrderStartedDomainEvent>

@@ -1,8 +1,8 @@
 ﻿using FluentValidation;
 using Microsoft.Extensions.Logging;
-using Ordering.Application.DTOs;
+using Ordering.API.Application.DTOs;
 
-namespace Ordering.Application.Validations
+namespace Ordering.API.Application.Validations
 {
     public class ShipOrderCommandValidator : AbstractValidator<ShipOrderDTO>
     {
