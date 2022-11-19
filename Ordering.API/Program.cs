@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Npgsql;
 using Ordering.API.Application.Behaviors;
 using Ordering.API.Application.Models;
 using Ordering.API.Infrastructure;
@@ -19,6 +20,7 @@ using Ordering.Domain.AggregatesModel.BuyerAggregate;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 using Ordering.Infrastructure;
 using Ordering.Infrastructure.Repositories;
+using System.Data;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -40,6 +42,13 @@ var connectionString = new ConnectionString(builder.Configuration["ConnectionStr
 builder.Services.AddSingleton(connectionString);
 builder.Services.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionBehavior<,>));
 builder.Services.AddControllers().AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<Program>());
+
+string connectionString1 = builder.Configuration.GetConnectionString("ConnectionString")!;
+
+builder.Services.AddDbContext<OrderingContextSeed>(options =>
+        options.UseNpgsql(connectionString1));
+
+builder.Services.AddTransient<IDbConnection>(_ => new NpgsqlConnection(connectionString1));
 
 
 
